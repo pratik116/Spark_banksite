@@ -1,0 +1,118 @@
+body {
+
+    margin: 0px 10px;
+    /* background-color: #a7a6b9; */
+  }
+
+  .menu {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px 15px;
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+
+  .home-heading {
+    margin-top: 40px;
+  }
+
+  .container {
+    /* display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 30px;
+
+
+  }
+
+  #head {
+    background-color: rgb(232, 232, 234);
+    border-radius: 60px;
+  }
+
+  #item-1 {
+    display: inline-block;
+    margin-left: -74px;
+
+  }
+
+  #item-2 {
+    color: rgb(30, 27, 81);
+    /* font-family: 'Merriweather', serif; */
+    font-family: "Raleway";
+    /* margin-right: 115px; */
+    display: inline-block;
+    margin-left: 450px;
+
+  }
+
+
+  #middleimg {
+    width: 800px;
+    height: 500px;
+    /* border-radius: 50%; */
+
+  }
+
+  .bank-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+
+  #hr1 {
+
+    width: 300px;
+    display: inline-block;
+    margin: -33px auto;
+  }
+
+  #hr2 {
+
+    width: 565px;
+    display: inline-block;
+
+  }
+
+  #footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+  .fa {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 40px;
+  }
+  .fa:hover{
+    transform: scale(105%);
+  }
+
+  #get-social {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  .btn {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  #submit_a{
+    text-decoration: none;
+    color:green;
+  }
+  #submit_a:hover{
+    color: white;
+  }
+  #img1{
+    border-radius: 50%;
+  }
+#Transaction-button{
+  margin-left: 6px;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Balance</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/jquery-ui-1.12.1/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        .heading h4 {
+            color: rgb(30, 27, 81);
+            font-family: "Raleway";
+            text-align: center;
+            background-color: rgb(232, 232, 234);
+            padding: 10px 0;
+            border-radius: 10%;
+            font-size: 30px;
+            font-weight: 300;
+
+        }
+
+        .marginal_1 {
+            margin: 5% 10%;
+            font-size: 20px;
+            font-family: 'Exo 2', sans-serif;
+        }
+        .marginal_2  {
+            margin: 5% 10%;
+            font-size: 20px;
+            font-family: 'Exo 2', sans-serif;
+        }
+
+        .form-div {
+            /* width: 30%; */
+        }
+
+        .submit-button {
+            font-size: 20px;
+            font-weight: bold;
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .back {
+           width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+           
+        }
+        .back a button{
+            width: 20%;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-top: 1%;
+        }
+        .marginal{
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+        .link{
+            margin-top: 3%;
+        }
+        .marginal_3{
+            width: 1px;
+            height: 400px;
+            margin-top: 7%;
+            background-color: rgb(30, 27, 81);
+        }
+        h5{
+            margin-bottom:10%;
+            text-align: center;
+            color:rgb(30, 27, 81) ;
+            font-size: 25px;
+            font-weight: 300;
+        
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    <section class="heading">
+        <h4>Sign Up</h4>
+       
+
+        
+      
+<div class="marginal">
+    <div class="marginal_1">
+        <h5>Using Card Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputAcc" class="form-label" >Card Holder Name</label>
+                <input type="text" class="form-control" id="exampleInputAcc AccName" aria-describedby="text">
+            </div>
+            <div class="mb-3 form-div">
+                <label for="exampleInputAccno" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="exampleInputAccno" aria-describedby="text">
+                <div id="text" class="form-text">We'll never share your Account Details with anyone else.</div>
+            </div>
+            <div class="mb-3 form-div">
+                <label for="exampleInputIFSC" class="form-label">CVV Number</label>
+                <input type="text" class="form-control" id="exampleInputIFSC" aria-describedby="text">
+            </div>
+        
+          
+           
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Send OTP</button>
+        </div> 
+        <div class="marginal_3">
+        
+        </div> 
+        <div class="marginal_2">
+            <h5>Using Bank Details</h5>
+
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputAcc"  class="form-label">Account Holder Name</label>
+                    <input type="text"  class="form-control" id="exampleInputAcc AccName" aria-describedby="text">
+                </div>
+                <div class="mb-3 form-div">
+                    <label for="exampleInputAccno" class="form-label">Account Number</label>
+                    <input type="text" class="form-control" id="exampleInputAccno" aria-describedby="text">
+                    <div id="text" class="form-text">We'll never share your Account Details with anyone else.</div>
+                </div>
+                <div class="mb-3 form-div">
+                    <label for="exampleInputIFSC" class="form-label">IFSC Number</label>
+                    <input type="text" class="form-control" id="exampleInputIFSC" aria-describedby="text">
+                </div>
+            
+              
+                
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Send OTP</button>
+
+            </form>
+        </div>
+
+        </div>
+        <div class="back">
+            <a href="index.html"><button type="button" class="btn btn-info">Back To Home </button></a>
+        </div>
+       
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Enter Your OTP</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="number">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="btn_submit_modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+    </section>
+
+</body>
+<script>
+    var A=$("#AccName").val();
+  
+    $("#btn_submit_modal").click(function(){
+        alert("Welcome!! Successfully Registerd ")
+    })
+</script>
+</html>
